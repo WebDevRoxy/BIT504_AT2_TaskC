@@ -6,8 +6,8 @@ import javax.swing.*;
 public class GameMain extends JPanel implements MouseListener{
 	//Constants for game 
 	// number of ROWS by COLS cell constants 
-	public static final int ROWS = 3;     
-	public static final int COLS = 3;  
+	public static final int ROWS = 5;     
+	public static final int COLS = 5;  
 	public static final String TITLE = "Tic Tac Toe";
 
 	//constants for dimensions used for drawing
@@ -43,10 +43,10 @@ public class GameMain extends JPanel implements MouseListener{
 	    
 		// Setup the status bar (JLabel) to display status message       
 		statusBar = new JLabel("         ");       
-		statusBar.setFont(new Font(Font.DIALOG_INPUT, Font.BOLD, 14));       
+		statusBar.setFont(new Font(Font.DIALOG_INPUT, Font.ITALIC, 14));       
 		statusBar.setBorder(BorderFactory.createEmptyBorder(2, 5, 4, 5));       
 		statusBar.setOpaque(true);       
-		statusBar.setBackground(Color.LIGHT_GRAY);  
+		statusBar.setBackground(Color.WHITE);  
 		
 		//layout of the panel is in border layout
 		setLayout(new BorderLayout());       
