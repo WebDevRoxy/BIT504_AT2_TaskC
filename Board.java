@@ -19,7 +19,6 @@ public class Board {
 			}
 		}
 	}
-	
 
 	 /** Return true if it is a draw (i.e., no more EMPTY cells) */ 
 	public boolean isDraw() {
@@ -55,11 +54,9 @@ public class Board {
 		if( cells[0][0].content == thePlayer && cells[1][1].content == thePlayer && cells[2][2].content == thePlayer)
 			return true;
 		 
-		
 		//  3-in-the-opposite-diagonal
 		if( cells[2][2].content == thePlayer && cells[1][1].content == thePlayer && cells[0][0].content == thePlayer)
 		return true;
-		
 		
 		//no winner, keep playing
 		return false;
